@@ -1,4 +1,4 @@
-package amazon;
+package fundamental;
 
 public class Fundamentals {
 

@@ -7,6 +7,7 @@ public class ThreadWaitAndNotify {
 
     public static Object lock =new Object();
     public static List<String> list = new ArrayList<String>();
+    static int count = 0;
 
     public static void main(String[] args) {
         new Producer().start();
@@ -41,9 +42,15 @@ public class ThreadWaitAndNotify {
         public void run() {
             while (true){
                 synchronized (lock){
+
+                    if(count == 10)
+                    {
+                        System.exit(0);
+                    }
                     if(list.size()==1){
                         System.out.println("Consumer Consumes A");
                         list.remove(0);
+                        count++;
                         lock.notify();
                         try {
                             lock.wait();

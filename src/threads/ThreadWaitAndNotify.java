@@ -19,6 +19,12 @@ public class ThreadWaitAndNotify {
         @Override
         public void run() {
             while (true){
+
+                if(count == 10)
+                {
+                    System.exit(0);
+                }
+
                 synchronized (lock){
                     if(list.size()==0){
                         System.out.println("Producer Added A");
@@ -43,10 +49,7 @@ public class ThreadWaitAndNotify {
             while (true){
                 synchronized (lock){
 
-                    if(count == 10)
-                    {
-                        System.exit(0);
-                    }
+
                     if(list.size()==1){
                         System.out.println("Consumer Consumes A");
                         list.remove(0);
@@ -64,6 +67,8 @@ public class ThreadWaitAndNotify {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+
+
                 }
             }
         }

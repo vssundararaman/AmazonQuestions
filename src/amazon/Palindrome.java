@@ -1,3 +1,4 @@
+package amazon;
 
 public class Palindrome {
 

@@ -1,7 +1,9 @@
+package amazon;
+
 /**
  * Given a string, find its first non-repeating character
  * Given a string, find the first non-repeating character in it.
- * For example, if the input string is “GeeksforGeeks”, then output should be ‘f’ and if input string is “GeeksQuiz”, then output should be ‘G’.
+ * For example, if the input string is ï¿½GeeksforGeeksï¿½, then output should be ï¿½fï¿½ and if input string is ï¿½GeeksQuizï¿½, then output should be ï¿½Gï¿½.
  *
  * Java program to find first non-repeating character
  */

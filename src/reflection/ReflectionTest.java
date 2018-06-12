@@ -12,7 +12,7 @@ public class ReflectionTest {
         Test test = new Test();
 
         Class cls = test.getClass();
-        System.out.println("The Name of the Class" + cls.getName());
+        System.out.println("The Name of the Class " + cls.getName());
 
         //Getting Constuctor
         Constructor constructor = cls.getConstructor();

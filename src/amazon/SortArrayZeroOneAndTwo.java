@@ -6,7 +6,9 @@ public class SortArrayZeroOneAndTwo {
 
         //int arr[] = {0,1,2,1,0,2,1,1,2,0,0,0,1};
 
-        int arr[] = {1,0,2};
+       // int arr[] = {1,0,2};
+
+        int arr[] = {0,2,1};
 
         sortArray(arr);
 

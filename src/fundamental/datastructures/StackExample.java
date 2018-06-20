@@ -32,7 +32,7 @@ public class StackExample {
     // Popping element from the top of the stack
     static void stack_pop(Stack<Integer> stack){
 
-        System.out.print(" Stack Pop ");
+        System.out.print("Stack Pop ");
 
         for(int i=0;i<10;i++){
             System.out.print(stack.pop() + " ");

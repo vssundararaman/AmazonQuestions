@@ -7,12 +7,12 @@ public class BuilderPatternDemo
         MealBuilder mealBuilder = new MealBuilder();
 
         Meal vegMeal = mealBuilder.prepareVegMeal();
-        System.out.println("Veg Meal");
+        System.out.println("Veg Dosa");
         vegMeal.showItems();
         System.out.println("Total Cost: " + vegMeal.getCost());
 
         Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
-        System.out.println("\n\nNon-Veg Meal");
+        System.out.println("\n\nMasala Dosa");
         nonVegMeal.showItems();
         System.out.println("Total Cost: " + nonVegMeal.getCost());
     }

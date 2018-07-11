@@ -14,6 +14,7 @@ public class ArrangeGivenNumberToFormLargestNumber {
         arr.add("54");
         arr.add("123");
         arr.add("32");
+        arr.add("9");
 
         printLargest(arr);
 
